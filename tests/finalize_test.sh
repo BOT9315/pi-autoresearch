@@ -20,6 +20,7 @@ fail_test() { TESTS_FAILED=$((TESTS_FAILED + 1)); echo -e "${RED}✗ $1${NC}"; e
 
 # Create a fresh test repo with a simulated autoresearch session
 # Returns the repo path
+
 setup_repo() {
   local REPO
   REPO=$(mktemp -d)
